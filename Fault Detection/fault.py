@@ -13,7 +13,7 @@ st.title("⚡ FAULT DETECTION IN POWER SYSTEM USING AI ")
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load("fault_detection_model.pkl")
+        model = joblib.load("Fault Detection/fault_detection_model.pkl")
         return model, True
     except Exception as e:
         return None, False
